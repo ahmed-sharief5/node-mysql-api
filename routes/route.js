@@ -8,6 +8,9 @@ var jwt = require('jsonwebtoken');
 var bcrypt = require('bcryptjs');
 var VerifyToken = require('./verfiyToken');
 
+app.get('/test', function (req, res) {
+  res.send('Hello World!')
+})
 
 app.get('/me',VerifyToken, function(req, res, next) {
 	let userId = req.userId;
