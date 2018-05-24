@@ -102,7 +102,7 @@ app.use(flash())
 
 
 //port no
-const port = 8080;
+const port = 3400;
 
 //adding middleware - cors
 app.use(cors());
